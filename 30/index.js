@@ -1,12 +1,10 @@
-function soma(x,y){
+function soma(x=0,y=0){
     return x+y;
 }
-console.log(soma(1,4));
-console.log(soma(2,2));
-console.log(soma(10,10));
+// console.log(soma());
 
-
-
+const raiz = n => Math.sqrt(n);
+console.log(raiz(16));
 
 
 
