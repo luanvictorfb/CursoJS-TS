@@ -22,8 +22,7 @@ function getDiaSemanaTxt(diaSemana) {
 }
 
 function getMesTxt(mes) {
-    const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-                   'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho','Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
     return meses[mes] || 'Mês inválido';
 }
 
