@@ -5,4 +5,7 @@ for( let numero of numeros){
         continue
     }
     console.log(numero)
+    if(numero === 6){
+        break
+    }
 }
