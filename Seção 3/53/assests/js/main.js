@@ -1,4 +1,3 @@
-
 const elementos = [
     {tag: 'p' , texto: 'Frase 1'},
     {tag: 'strong' , texto: 'Frase 2'},
