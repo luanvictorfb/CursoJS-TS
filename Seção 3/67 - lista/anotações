@@ -1,0 +1,18 @@
+/*!! 
+
+
+
+SEMPRE OLHE SE A NOMECLATURA ESTÁ IGUAL PARA PEGAR ITENS NO HTML E TANTO PARA COLOCALOS NO JS.
+
+trim() -- LIMPA ESPAÇOS EM BRANCO
+variavel.parentElement -- PEGA O ELEMENTO PAI DA VARIAVEL
+tarefasJSON = JSON.stringify(listadeTarefas); -- JSON.stringfy() = cria um json com o parâmetro que você colocar dentro
+localStorage.setItem('tarefas', tarefasJSON); -- localStorage = local no navegador para salvar dados /// setItem -- ESTUDAR DPS
+
+
+
+
+
+
+
+*/
