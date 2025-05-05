@@ -7,6 +7,7 @@ const tarefas = document.querySelector('.tarefas');
 btnTarefa.addEventListener('click', function () {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
+
 });
 
 inputTarefa.addEventListener('keypress', function (e) {
@@ -19,8 +20,11 @@ inputTarefa.addEventListener('keypress', function (e) {
 document.addEventListener('click' , function(e){
     const el = e.target;
     if(el.classList.contains('apagar')){
-        el.parentElement.remove();
-        salvarTarefa();
+        el.parentElement.setAttribute('class','fade-out');
+        el.parentElement.addEventListener('animationend', () => {
+            el.parentElement.remove();
+            salvarTarefa();
+        }, { once: true });
     }
 });
 
@@ -31,7 +35,8 @@ function limpaInput(){
 }
 
 function criaLi() {
-    const li = document.createElement('li');
+    const li = document.createElement('li'); 
+    li.setAttribute('class', 'fade-in')
     return li;
 }
 
