@@ -50,7 +50,7 @@ function criaTarefa(textoInput) {
 }
 
 function criaBotaoApagar(li){
-    li.innerHTML += '  '
+    li.innerHTML += '  ';
     const btnApagar = document.createElement('button');
     btnApagar.innerText = 'Apagar';
     btnApagar.setAttribute('class', 'apagar');
@@ -61,7 +61,7 @@ function salvarTarefa(){
     const liTarefas = tarefas.querySelectorAll('li');
     const listadeTarefas = [];
 
-    for (let tarefa of liTarefas    ){
+    for (let tarefa of liTarefas){
         let tarefaTexto = tarefa.innerText;
         tarefaTexto = tarefaTexto.replace('Apagar' , '').trim();
         listadeTarefas.push(tarefaTexto);
