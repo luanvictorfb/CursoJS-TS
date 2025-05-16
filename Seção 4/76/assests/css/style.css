@@ -30,7 +30,8 @@ body{
     border-radius: 20px;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.336);
     background-color: white;
-    max-width: 640px;
+    width: 750px;
+    max-width: 90%;
     height: 90%;
     padding: 20px;
 }
@@ -49,29 +50,31 @@ form {
     gap: 10px;
 }
 
-form button{
+form .buttons button{
     border-radius: 10px;
     margin: 3px;
-    color: white;
-    background-image:linear-gradient(to top, orange ,red);
+    color: black;
+    background-color: orange;
     font-weight: 900;
     padding: 10px;
     cursor: pointer;
     border: 1px solid black;
-    transition: all 5ms ease;
+    transition: all .5s ease;
+    font-size: 1.5em;
 }
 
 .buttons button:hover,form button:active{
     background-image: none;
     background-color: red;
+    transition: all .5s ease;
 }
 
 form input{
     font-size: 2em;
+    text-align: end;
 }
 
 form input:focus{
-    text-align: end;
     outline: 1px solid red;
 }
 
