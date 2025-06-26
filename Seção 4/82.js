@@ -5,5 +5,5 @@ const nomes = ['Luan', 'Pietro', 'Yasmin', 'Juan', 'Coradi'];
 
 // nomes.splice('!Qual indice que eu quero começar a mexer', '!Quantos elementos eu quero remover', 'Elementos que quero adicionar');
 
-const removidos = nomes.splice(0 , 0 , 'Pedrin'  );
+const removidos = nomes.splice(-1 , 0 , 0);
 console.log(nomes , removidos);
