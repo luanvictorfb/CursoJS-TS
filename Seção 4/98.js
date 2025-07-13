@@ -22,4 +22,4 @@ function criaPessoa(nome,sobrenome){
 }
 
 const p1 = criaPessoa('Luan','Victor');
-console.log()
+const p2 = criaPessoa('Yasmin','Lopes');
