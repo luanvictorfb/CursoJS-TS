@@ -44,11 +44,11 @@ class ValidaCPF {
     }
 }
 
-const validaCPF = new ValidaCPF('070.987.720-03');
-console.log(validaCPF.valida())
+// const validaCPF = new ValidaCPF('070.987.720-03');
+// console.log(validaCPF.valida())
 
-if (validaCPF.valida()) {
-    console.log(`${validaCPF.cpfEnviado} - CPF válido.`)
-} else {
-    console.log(`${validaCPF.cpfEnviado} - CPF inválido.`)
-}
+// if (validaCPF.valida()) {
+//     console.log(`${validaCPF.cpfEnviado} - CPF válido.`)
+// } else {
+//     console.log(`${validaCPF.cpfEnviado} - CPF inválido.`)
+// }
