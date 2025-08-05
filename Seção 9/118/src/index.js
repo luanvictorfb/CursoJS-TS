@@ -1,6 +1,4 @@
-class pessoa {
-    constructor(nome,idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
-}
+import Pessoa, { nome, sobrenome, idade, soma } from './modulo1'
+
+const p1 = new Pessoa(nome, sobrenome);
+console.log(p1);
