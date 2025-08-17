@@ -2,7 +2,7 @@ const path = require('path');  //CommonJS - Padrão Node
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/',
     output: {
         path: path.resolve(__dirname, 'public', 'assets', 'js'),
         filename: 'bundle.js'
