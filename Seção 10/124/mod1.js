@@ -4,4 +4,9 @@ class Pessoa {
     }
 }
 
-exports.Pessoa = Pessoa;
+const nome = 'Luan';
+const sobrenome = 'Victor';
+
+module.exports = {
+    nome, sobrenome, Pessoa
+};
