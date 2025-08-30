@@ -1,7 +1,16 @@
 const express = require('express');
 const app = express();
 
-// http://facebook.com/profiles/12345?campanha=googleads&nome_campanha=seila&
+app.use(express.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+    res.send(`
+        <form method="POST">
+        Nome: <input type="text" name="nome">    
+        <button>Enviar formulário</button>
+        </form>
+    `)
+});
 
 app.get('/testes', (req, res) => {
     res.send(`
@@ -32,7 +41,8 @@ app.get('/testes/:idUsers/:parametro', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    res.send('Recebi o formulário');
+    console.log(req.body);
+    res.send(`Oque você me enviou foi: ${req.body.nome}`);
 });
 
 app.listen(3000, () => {
