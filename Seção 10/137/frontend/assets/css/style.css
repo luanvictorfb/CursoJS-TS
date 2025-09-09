@@ -33,6 +33,12 @@ main {
     gap: 10px;
 }
 
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .senha-gerada{
     font-size: 2.5em;
     font-weight: 700;
